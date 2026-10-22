@@ -1,0 +1,30 @@
+# Credentials. The Meshy API key lives in mcp/.env and must never be committed.
+.env
+.env.*
+*.env
+mcp/.env
+
+# Machine-local: the path to the MCP server on this computer. The install
+# script writes it, and the launcher falls back through its other candidates
+# when it is absent.
+mcp/server.json
+
+# Build output and dependencies
+node_modules/
+dist/
+*.tgz
+
+# The locally installed Meshy MCP server, restored by
+# scripts/install-meshy-mcp.ps1
+mcp/meshy-mcp-server/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# A leftover write-permission probe. The delete guard refuses to remove
+# dotfiles on this machine, so it is excluded rather than deleted.
+.probe

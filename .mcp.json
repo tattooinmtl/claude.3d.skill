@@ -1,0 +1,12 @@
+{
+  "$comment": "The plugin brings its own MCP server. The Meshy MCP server is the one this plugin is built against - it publishes 28 tools, and `references/tools.md` lists every one of them with its real cost.",
+  "$note": "The server is started by scripts/install-meshy-mcp.ps1, which clones and builds it into mcp/meshy-mcp-server and writes the path into mcp/server.json. Until that script has run, the server will not start and the skills will say so rather than failing silently.",
+  "mcpServers": {
+    "meshy": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/mcp/serve.mjs"
+      ]
+    }
+  }
+}

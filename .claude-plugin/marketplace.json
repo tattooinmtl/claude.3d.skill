@@ -1,0 +1,21 @@
+{
+  "name": "claude-meshy",
+  "owner": {
+    "name": "Tattoo",
+    "url": "https://github.com/tattooinmtl"
+  },
+  "metadata": {
+    "description": "Meshy 3D for Claude Code: generate models, textures, rigs and animations, check printability, and hand the result to Blender or Unity. Built from a reverse-engineering pass over the Meshy MCP server."
+  },
+  "plugins": [
+    {
+      "name": "meshy-3d",
+      "source": "./",
+      "description": "Generate 3D models, textures and images; rig and animate characters; check and repair printability; hand off to Blender and Unity.",
+      "author": {
+        "name": "Tattoo",
+        "url": "https://github.com/tattooinmtl"
+      }
+    }
+  ]
+}
