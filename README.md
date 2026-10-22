@@ -68,7 +68,7 @@ Once this repository is published, the marketplace manifest is what makes it
 installable:
 
 ```
-/plugin marketplace add tattooinmtl/claude.3d.skill
+/plugin marketplace add tattooinmtl/claude_meshy
 /plugin install meshy-3d@claude-meshy
 ```
 
