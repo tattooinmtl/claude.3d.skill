@@ -64,18 +64,22 @@ answers.
 
 ### 3. The plugin itself
 
-From a Claude Code session, with this directory as the plugin root:
+Once this repository is published, the marketplace manifest is what makes it
+installable:
 
 ```
-/plugin marketplace add C:\claude_meshy
+/plugin marketplace add tattooinmtl/claude.3d.skill
 /plugin install meshy-3d@claude-meshy
 ```
 
-Or load it for one session:
+Or clone it and load it for one session:
 
 ```
 claude --plugin-dir C:\claude_meshy
 ```
+
+The marketplace is called `claude-meshy`; the plugin inside it is
+`meshy-3d`. They do not have to match the repository name.
 
 ### 4. The DCC side (Blender and Unity)
 
